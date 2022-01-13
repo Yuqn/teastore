@@ -1,0 +1,164 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper>#dhl{
+    width: 100%;
+    height: 50px;
+    background-color: mediumseagreen;
+}
+#wrapper>#dhl>#dhlBef{
+    width: 10%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    /*background-color: red;*/
+    border-right: 1px solid white;
+    float: left;
+}
+#wrapper>#dhl>#dhlBef>a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+#wrapper>#dhl>#dhlInd{
+    width: 10%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    /*background-color: red;*/
+    border-left: 1px solid white;
+    float: right;
+}
+#wrapper>#dhl>#dhlInd>a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+#wrapper>#cent{
+    width: 60%;
+    /*height: 1000px;*/
+    margin-left: 20%;
+    /*border: 1px solid yellow;*/
+    margin-top: 20px;
+    margin-bottom: 380px;
+    /*overflow: hidden;*/
+}
+#wrapper>#cent>#addAdd{
+    width: 150px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: mediumseagreen;
+    line-height: 30px;
+    text-align: center;
+}
+#wrapper>#cent>#ts{
+    width: 300px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 11px;
+}
+#wrapper>#cent>#addList{
+    width: 100%;
+    /*height: 100%;*/
+    margin-top: 15px;
+}
+#wrapper>#cent>#addList>.addList{
+    width: 100%;
+    height: 190px;
+    border: 1px solid darkgray;
+    margin-bottom: 15px;
+}
+#wrapper>#cent>#addList>.addList>.addTitle{
+    width: 100%;
+    height: 35px;
+    background-color: mediumseagreen;
+    border-bottom: 1px black solid;
+    margin-bottom: 10px;
+}
+#wrapper>#cent>#addList>.addList>.addTitle>.addTitName{
+    width: 20%;
+    height: 100%;
+    /*border-right: 1px solid red;*/
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 35px;
+    float: left;
+}
+#wrapper>#cent>#addList>.addList>.addTitle>.addTitUp{
+    width: 35px;
+    height: 35px;
+    float: right;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 35px;
+}
+#wrapper>#cent>#addList>.addList>.addTitle>.addTitUp>a{
+    text-decoration: none;
+    color: black;
+}
+#wrapper>#cent>#addList>.addList>.addName{
+    width: 100%;
+    height: 25px;
+    font-size: 13px;
+    /*border-bottom: 1px solid black;*/
+}
+#wrapper>#cent>#addList>.addList>.addName>.tou{
+    float: left;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+    text-align: right;
+}
+#wrapper>#cent>#addList>.addList>.addName>.wei{
+    float: left;
+    width: 400px;
+    height: 25px;
+    line-height: 25px;
+    margin-left: 20px;
+}
+#wrapper>#cent>#addList>.addList>.addName>a{
+    width: 50px;
+    height: 25px;
+    float: right;
+    text-decoration: none;
+    color: black;
+}
+#wrapper>#addDiv{
+    width: 400px;
+    height: 310px;
+    border: 1px solid green;
+    background-color: white;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#wrapper>#addDiv>#gb{
+    width: 100%;
+    height: 20px;
+
+}
+#wrapper>#addDiv>#gb>div{
+    width: 20px;
+    height: 100%;
+    float: right;
+    /*border: 1px green solid;*/
+    line-height: 20px;
+    text-align: center;
+
+}
+#wrapper>#addDiv>form{
+    width: 80%;
+    height: 280px;
+    margin-left: 10%;
+    /*background-color: yellowgreen;*/
+}
+#wrapper>#addDiv>form>.addText{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}

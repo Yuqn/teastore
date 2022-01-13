@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yuqn.dao.DetailsDao">
+    <select id="selDetails" resultType="com.yuqn.entity.Details">
+        select details_id,goods_id,details_one,details_two,details_three,details_four,details_five,details_text,details_price from details where goods_id=#{goods_id}
+    </select>
+    <insert id="admAddDetGo" >
+        insert into details(goods_id,details_one,details_two,details_three,details_four,details_five,details_text,details_price)VALUES(#{goods_id},#{details_one},#{details_two},#{details_three},#{details_four},#{details_five},#{details_text},#{details_price})
+    </insert>
+    <delete id="admUpDetGo">
+        update details set details_one=#{details_one},details_two=#{details_two}, details_three=#{details_three},details_four=#{details_four},details_five=#{details_five},details_text=#{details_text},details_price=#{details_price} where goods_id=#{goods_id}
+    </delete>
+</mapper>

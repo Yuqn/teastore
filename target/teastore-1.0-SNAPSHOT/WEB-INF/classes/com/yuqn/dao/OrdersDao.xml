@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yuqn.dao.OrdersDao">
+    <insert id="addOrders">
+        insert into orders(user_id,goods_id,goods_quantity,orders_price,address_id,norms_id,orders_time,orders_number) VALUES (#{user_id},#{goods_id},#{goods_quantity},#{orders_price},#{address_id},#{norms_id},#{orders_time},#{orders_number})
+    </insert>
+    <select id="selOrderNum" resultType="com.yuqn.vo.OrdersAdd">
+        select orders_number from orders where orders_number=#{orders_number}
+    </select>
+    <select id="SelGoodsNo" resultType="com.yuqn.vo.GoodsNo">
+        select a.orders_id,a.orders_number,b.goods_id,c.user_id,d.norms_id,b.def_id,b.goods_name,b.goods_suggest,a.orders_price,d.norms_text,a.goods_quantity,a.orders_time,a.is_pay,a.is_delivery from orders a left join goods b on a.goods_id=b.goods_id left join user c on a.user_id=c.user_id left join norms d on a.norms_id=d.norms_id
+        <where>
+            <if test="user_phone!=null">
+                c.user_phone=#{user_phone}
+            </if>
+            <if test="is_pay!=null">
+                and a.is_pay=#{is_pay}
+            </if>
+            <if test="is_delivery!=null">
+                and a.is_delivery=#{is_delivery}
+            </if>
+        </where>
+    </select>
+    <delete id="reOrder">
+        DELETE from orders where orders_id=#{orders_id}
+    </delete>
+    <select id="selOrderBefAndAf" resultType="com.yuqn.vo.OrderBefAndAf">
+        select a.orders_number,a.orders_time,a.goods_quantity,a.orders_price,b.goods_name,c.norms_text,d.oradd_name,d.oradd_phone,d.oradd_area,d.oradd_minute,a.is_pay,is_delivery,e.express_number from orders a left join goods b on a.goods_id=b.goods_id left join norms c on a.norms_id=c.norms_id left join oradd d on a.orders_number=d.orders_number LEFT JOIN express e on e.orders_number=a.orders_number
+        <where>
+            <if test="is_pay!=null">
+                a.is_pay=#{is_pay}
+            </if>
+            <if test="is_delivery!=null">
+                and a.is_delivery=#{is_delivery}
+            </if>
+            <if test="orders_number!=null">
+                and a.orders_number=#{orders_number}
+            </if>
+        </where>
+    </select>
+    <update id="payOrder">
+        UPDATE orders set is_pay=1 where orders_number=#{orders_number}
+    </update>
+</mapper>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yuqn.dao.NormsDao">
+    <select id="selNorms" resultType="com.yuqn.entity.Norms">
+        select norms_id,goods_id,norms_text,norms_price,norms_img from norms where goods_id=#{goods_id}
+    </select>
+    <select id="selPri" resultType="com.yuqn.entity.Norms">
+        select norms_price from norms where norms_id=#{norms_id}
+    </select>
+    <insert id="NormsY">
+        insert into norms(goods_id,norms_text,norms_price)VALUES (#{goods_id},#{norms_text},#{norms_price})
+    </insert>
+</mapper>

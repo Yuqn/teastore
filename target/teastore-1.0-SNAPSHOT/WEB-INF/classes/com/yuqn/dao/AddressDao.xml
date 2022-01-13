@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yuqn.dao.AddressDao">
+    <select id="selectAdd" resultType="com.yuqn.entity.Address">
+        select a.address_id,a.user_id,a.address_phone,a.address_name,a.address_code,a.address_area,a.address_minute from address a join user b on a.user_id=b.user_id where b.user_phone=#{user_phone}
+    </select>
+    <delete id="delAdd">
+        delete from address where address_id=#{address_id}
+    </delete>
+    <update id="upAdd">
+        update address SET address_phone=#{address_phone},address_name=#{address_name},address_code=#{address_code},address_area=#{address_area},address_minute=#{address_minute} where address_id=#{address_id}
+    </update>
+    <insert id="addAdd">
+        insert into address(user_id,address_phone,address_name,address_code,address_area,address_minute)values(#{user_id},#{address_phone},#{address_name},#{address_code},#{address_area},#{address_minute})
+    </insert>
+    <select id="selAdd" resultType="com.yuqn.entity.Address">
+        select address_id,address_phone,address_name,address_code,address_area,address_minute from address where address_id=#{address_id}
+    </select>
+</mapper>

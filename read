@@ -1,0 +1,13 @@
+ssm框架第一个项目，开发步骤为
+一、创建数据库
+二、添加依赖
+    springmvc，spring，mybatis、jackson、mysql、druid、jsp、service依赖
+三、web.xml配置
+    中央调度器、监听器、字符过滤器
+四、创建包
+    创建dao包，实体类包，service包，controller包
+五、添加配置文件
+    添加springmvc.xml配置文件，添加spring.xml配置文件，添加mybatis.xml配置文件
+六、写代码
+    写dao接口和对应的mapper文件，写controller代码，写service代码
+七、写前端代码

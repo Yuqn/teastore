@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yuqn.dao.PictureDao">
+    <insert id="admAddPicGo">
+        insert into picture(goods_id,picture_one,picture_two,picture_three,picture_four,picture_five)VALUES(#{goods_id},#{picture_one},#{picture_two},#{picture_three},#{picture_four},#{picture_five})
+    </insert>
+    <update id="admUpPicGo">
+        update picture set picture_one=#{picture_one},picture_two=#{picture_two},picture_three=#{picture_three},picture_four=#{picture_four},picture_five=#{picture_five} where goods_id=#{goods_id}
+    </update>
+    <delete id="admDelPicGo">
+        DELETE from picture where goods_id=#{goods_id}
+    </delete>
+</mapper>

@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#wrapper>#rotation{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+}
+#wrapper>#rotation>ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    list-style: none;
+}
+#wrapper>#rotation>ul>li{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+#wrapper>#rotation>ul>li>img{
+    width: 100%;
+    height: 100%;
+}
+#wrapper>#show{
+    width: 96%;
+    margin-left: 2%;
+}
+#wrapper>#show>#showText{
+    width: 100%;
+    height: 110px;
+    position: relative;
+    /*border: green 1px solid;*/
+}
+#wrapper>#show>#showText>h3{
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 3px solid green;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#wrapper>#show>#showImg{
+    width: 100%;
+    height: 380px;
+}
+#wrapper>#show>#showImg>ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+#wrapper>#show>#showImg>ul>li{
+    float: left;
+    width: 260px;
+    height: 280px;
+    margin: 15px 30px 30px 30px;
+}
+#wrapper>#show>#showImg>ul>li>a{
+    width: 100%;
+    height: 100%;
+}
+#wrapper>#show>#showImg>ul>li>a>img{
+    width: 100%;
+    height: 100%;
+    border: green 1px solid;
+    align-content: center;
+}
+#wrapper>#show>#showImg>ul>li>p{
+    width: 100%;
+    height: 30px;
+    display: block;
+    margin-top: 10px;
+    align-content: center;
+    text-align: center;
+}
+#wrapper>#show>#showImg>ul>li>p>a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: green;
+    /*text-align: center;*/
+}
+#wrapper>#member{
+    width: 100%;
+}
+#wrapper>#memberDiv{
+    width: 100%;
+    height: 130px;
+    /*border: green 1px solid;*/
+}
+#wrapper>#memberDiv>a>img{
+    width: 100%;
+    height: 100%;
+}
+#wrapper>#teaMind{
+    width: 90%;
+    margin-left: 5%;
+}
+#wrapper>#teaMind>#teaText{
+    width: 100%;
+    height: 110px;
+    position: relative;
+}
+#wrapper>#teaMind>#teaText>h3{
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 3px solid green;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#wrapper>#teaMind>p{
+    word-wrap: break-word;
+    text-indent: 2em;
+    line-height: 24px;
+}
+#wrapper>#teaMind>#teaImgOne,
+#wrapper>#teaMind>#teaImgTwo,
+#wrapper>#teaMind>#teaImgThree,
+#wrapper>#teaMind>#teaImgFour{
+    width: 100%;
+    height: 430px;
+}
+#wrapper>#teaMind>#teaImgOne>img,
+#wrapper>#teaMind>#teaImgTwo>img,
+#wrapper>#teaMind>#teaImgThree>img,
+#wrapper>#teaMind>#teaImgFour>img{
+    width: 100%;
+    height: 100%;
+}
+

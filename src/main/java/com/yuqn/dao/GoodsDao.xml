@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yuqn.dao.GoodsDao">
+    <select id="selGoods" resultType="com.yuqn.entity.Goods">
+        SELECT goods_id,type_name,goods_price,goods_name,goods_suggest,is_ground,def_id FROM goods where is_ground=1 ORDER BY RAND() LIMIT 5
+    </select>
+    <select id="GoodsDetails" resultType="com.yuqn.vo.GoodsDetail">
+        select a.goods_id,a.type_name,a.goods_price,a.goods_name,a.goods_suggest,a.is_ground,a.def_id,b.picture_id,c.details_id,b.picture_one,b.picture_two,b.picture_three,b.picture_four,b.picture_five,c.details_one,c.details_two,c.details_three,c.details_four,c.details_five,c.details_text,c.details_price from goods a LEFT JOIN picture b on a.goods_id=b.goods_id LEFT JOIN details c on a.goods_id=c.goods_id where a.goods_id=#{goods_id}
+    </select>
+    <select id="GoodsSousuo" resultType="com.yuqn.entity.Goods">
+        select goods_id,type_name,goods_price,goods_name,goods_suggest,is_ground,def_id from goods
+        <where>
+            <if test="true">
+                is_ground=1
+            </if>
+            <if test="goods_name!=null">
+                and goods_name LIKE "%" #{goods_name} "%"
+            </if>
+            <if test="type_name!=null">
+                and type_name=#{type_name}
+            </if>
+        </where>
+    </select>
+    <select id="goodsSel" resultType="com.yuqn.entity.Goods">
+        select goods_price from goods where goods_id=#{goods_id}
+    </select>
+    <select id="admGoodsSel" resultType="com.yuqn.entity.Goods">
+        select goods_id,type_name,goods_price,goods_name,goods_suggest,is_ground,def_id from goods
+        <where>
+            <if test="is_ground!=null">
+                is_ground=#{is_ground}
+            </if>
+        </where>
+    </select>
+    <select id="admSelGoods" resultType="com.yuqn.vo.GoodsDetail">
+        select a.goods_id,a.type_name,a.goods_price,a.goods_name,a.goods_suggest,a.def_id,b.picture_id,c.details_id from goods a LEFT JOIN picture b on a.goods_id=b.goods_id LEFT JOIN details c on a.goods_id=c.goods_id
+    </select>
+    <update id="upGoods" >
+        update goods set is_ground=#{is_ground} where goods_id=#{goods_id}
+    </update>
+    <insert id="admAddGoods">
+        insert into goods(type_name,goods_price,goods_name,goods_suggest,def_id) VALUES (#{type_name},#{goods_price},#{goods_name},#{goods_suggest},#{def_id})
+    </insert>
+    <delete id="admRemGoods">
+        delete from goods where goods_id=#{goods_id}
+    </delete>
+
+</mapper>

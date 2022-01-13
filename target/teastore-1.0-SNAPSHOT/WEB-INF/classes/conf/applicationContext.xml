@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <!--获取properties文件，从文件根目录开始找-->
+    <context:property-placeholder location="classpath:conf/jdbc.properties"/>
+    <!--druid配置，声明数据源，通过阿里巴巴创建的类进行创建一个MyDatasource对象-->
+    <bean id="myDataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="${jdbc.url}" />
+        <property name="username" value="${jdbc.user}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="maxActive" value="${jdbc.maxActive}" />
+    </bean>
+    <!--声明sqlSessionFactor对象-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--set注入，把数据源MyDatasource赋值给sqlSessionFactory中的dataSource属性，让spring去生成sqlSessionFactory-->
+        <property name="dataSource" ref="myDataSource"/>
+        <!--set注入，把mybatis文件路径赋值给sqlSessionFactory中的configLocation属性，让spring去生成sqlSessionFactory-->
+        <property name="configLocation" value="classpath:conf/mybatis.xml"/>
+    </bean>
+    <!--生成每个接口的代理对象，类似getMapper（）方法，默认对象名称为接口名称首字母小写，所以不用加id-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer" >
+        <!--set注入，把sqlSessionFactory赋值给sqlSessionFactoryBeanName属性-->
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+        <!--set注入，把接口路径赋值给basePackage属性-->
+        <property name="basePackage" value="com.yuqn.dao" />
+    </bean>
+    <!--声明service注解-->
+    <context:component-scan base-package="com.yuqn.service"/>
+    <!--    声明事务管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+     <!--        声明事务给哪个数据源-->
+        <property name="dataSource" ref="myDataSource"></property>
+    </bean>
+    <!--    启动事务管理器,transaction-manager属性是要启动管理器的id-->
+    <tx:annotation-driven transaction-manager="transactionManager" />
+</beans>

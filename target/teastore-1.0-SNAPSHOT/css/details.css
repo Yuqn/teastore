@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#wrapper>#cent{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    overflow: hidden;
+    /*border: 1px solid red;*/
+}
+#wrapper>#cent>#centImg{
+    float: left;
+}
+#wrapper>#cent>#centGoods{
+    float: right;
+}
+#wrapper>#cent>#centImg{
+    width: 350px;
+    height: 500px;
+    margin-right: 40px;
+}
+#wrapper>#cent>#centGoods{
+    width: 70%;
+    /*height: 1000px;*/
+    /*background-color: yellow;*/
+}
+#wrapper>#cent>#centImg>#centTopImg{
+    width: 100%;
+    height: 400px;
+}
+#wrapper>#cent>#centImg>#centTopImg>img{
+    width: 100%;
+    height: 100%;
+}
+#wrapper>#cent>#centImg>#centImgList{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+#wrapper>#cent>#centImg>#centImgList>img{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 5px;
+}
+#wrapper>#cent>#centGoods>p{
+    line-height: 32px;
+    word-wrap: break-word;
+}
+#wrapper>#cent>#centGoods>#goodsDet,#wrapper>#cent>#centGoods>#goodsName{
+    font-size: 18px;
+    font-weight: 700;
+    color: darkgrey;
+}
+#wrapper>#cent>#centGoods>#goodsType,#wrapper>#cent>#centGoods>#goodsForm>#ordForm>p,#wrapper>#cent>#centGoods>#goodsForm>#ordForm>#addAddress{
+    font-size: 14px;
+    font-weight: 700;
+}
+#wrapper>#cent>#centGoods>#goodsForm>#ordForm>#normsList,
+#wrapper>#cent>#centGoods>#goodsForm>#ordForm>#addressList{
+    font-size: 14px;
+}
+#wrapper>#cent>#centGoods>#goodsDel,#wrapper>#cent>#centGoods>#ifType{
+    font-size: 14px;
+}
+#wrapper>#cent>#centGoods>#goodsPri{
+    font-size: 18px;
+    font-weight: 700;
+    color: red;
+}
+#wrapper>#cent>#centGoods>#goodsForm{
+    width: 100%;
+}
+#wrapper>#cent>#centGoods>#goodsForm>#ordform{
+    width: 100%;
+    /*height: 300px;*/
+    /*border: 1px solid yellow;*/
+}
+#wrapper>#cent>#centGoods>#goodsForm>#ordform>#num{
+    list-style: none;
+    width: 100px;
+    height: 30px;
+    /*background-color: green;*/
+}
+#wrapper>#cent>#centGoods>#goodsForm>#ordform>#num>#goodsNum{
+    /*width: 30px;*/
+    /*height: 20px;*/
+    /*margin: 0px 5px;*/
+}
+#wrapper>#cent>#centGoods>#goodsForm>#ordform>#num>li{
+    float: left;
+}
+#wrapper>#cent>#centGoods>#goodsForm>#ordform>#num>li>div{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid black;
+}
+#wrapper>#cent>#centGoods>#goodsForm>#ordform>#normsList{
+    /*height: 200px;*/
+    width: 100%;
+}
+#wrapper>#cent>#centGoods>#goodsForm>#ordform>#addressList{
+    width: 100%;
+    height: 80px;
+    overflow: auto;
+}
+#wrapper>#cent>#ifLive{
+    width: 100%;
+    /*margin-left: 5%;*/
+    margin-top: 25px;
+    overflow: hidden;
+    /*border: 1px yellow solid;*/
+}
+#wrapper>#cent>#ifLive>img{
+    width: 100%;
+    height: 400px;
+}
+#wrapper>#cent>#goodsDetails{
+    width: 100%;
+    /*margin-left: 5%;*/
+    margin-top: 25px;
+    overflow: hidden;
+}
+#wrapper>#cent>#detailsPrice{
+    width: 100%;
+    /*margin-left: 5%;*/
+    margin-top: 25px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+#wrapper>#cent>#ifLive>div,#wrapper>#cent>#goodsDetails>div,#wrapper>#cent>#detailsPrice>div{
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    line-height: 50px;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+#wrapper>#cent>#ifLive>p,#wrapper>#cent>#goodsDetails>p,#wrapper>#cent>#detailsPrice>p{
+    text-indent: 2em;
+    word-wrap: break-word;
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yuqn.dao.OraddDao">
+    <insert id="UserOrAdd">
+        insert into oradd(oradd_phone,oradd_name,oradd_code,oradd_area,oradd_minute,orders_number)values(#{oradd_phone},#{oradd_name},#{oradd_code},#{oradd_area},#{oradd_minute},#{orders_number})
+    </insert>
+</mapper>

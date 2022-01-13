@@ -1,0 +1,104 @@
+#wrapper>#btm{
+    width: 100%;
+}
+#wrapper>#btm>#btmDhl{
+    width: 100%;
+    background-color: rgb(75,75,74);
+}
+#wrapper>#btm>#btmDhl>#btmDhlGn{
+    width: 1000px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: white 1px dashed;
+}
+#wrapper>#btm>#btmDhl>#btmDhlGn>ul{
+    width: 500px;
+    height: 100px;
+    list-style: none;
+    position: absolute;
+    /*border-bottom: white 1px dashed;*/
+    left: 50%;
+    transform: translateX(-50%);
+}
+#wrapper>#btm>#btmDhl>#btmDhlGn>ul>li{
+    width: 100px;
+    height: 100%;
+    float: left;
+    line-height: 100px;
+    text-align: center;
+}
+#wrapper>#btm>#btmDhl>#btmDhlGn>ul>li>a{
+    text-decoration: none;
+    color: rgb(211,211,211);
+}
+#wrapper>#btm>#btmDhl>#btmDhlHref{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    position: relative;
+    margin-top: 25px;
+}
+#wrapper>#btm>#btmDhl>#btmDhlHref>ul{
+    width: 200px;
+    height: 30px;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+}
+#wrapper>#btm>#btmDhl>#btmDhlHref>ul>li{
+    float: left;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+#wrapper>#btm>#btmDhl>#btmDhlHref>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+#wrapper>#btm>#btmDhl>#btmDhlTouch{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+#wrapper>#btm>#btmDhl>#btmDhlState{
+    width: 100%;
+    height: 30px;
+    margin-top: 4px;
+}
+#wrapper>#btm>#btmDhl>#btmDhlState>a{
+    width: 140px;
+    height: 30px;
+    display: block;
+    /*font-size: 14px;*/
+    color: white;
+    text-decoration: none;
+    margin: 0 auto;
+}
+#wrapper>#btm>#btmDhl>#btmDhlState>a>div:first-child{
+    width: 14px;
+    height: 14px;
+    float: left;
+}
+#wrapper>#btm>#btmDhl>#btmDhlState>a>div:first-child>img{
+    width: 100%;
+    height: 100%;
+}
+#wrapper>#btm>#btmDhl>#btmDhlState>a>div:last-child{
+    width: 135px;
+    height: 14px;
+    float: left;
+    line-height: 14px;
+    font-size: 11px;
+    text-align: center;
+    float: left;
+}
+#wrapper>#btm>#btmDhl>#btmDhlState>a:hover{
+    color: dodgerblue;
+}

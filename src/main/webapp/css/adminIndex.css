@@ -1,0 +1,242 @@
+*{margin: 0;padding: 0;}
+#wrapper{
+    width: 100%;
+}
+#wrapper>#dhlTop{
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#wrapper>#cent{
+    width: 80%;
+    height: 1000px;
+    margin-left: 10%;
+    border-top: 1px solid black;
+}
+#wrapper>#cent>#centLeft{
+    width: 15%;
+    border-right: black 1px solid;
+    float: left;
+}
+#wrapper>#cent>#centRight{
+    width: 84%;
+    height: 800px;
+    /*border-right: black 1px solid;*/
+    float: right;
+}
+#wrapper>#cent>#centRight>ul{
+    width: 100%;
+    height: 40px;
+    list-style: none;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+#wrapper>#cent>#centRight>ul>li{
+    width: 10%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+}
+
+
+#wrapper>#cent>#centRight>#ListDate{
+    width: 100%;
+}
+
+/*状态*/
+#wrapper>#cent>#centRight>#ListDate>form>.goodsLi{
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    display: flex;
+    border: 1px solid black;
+}
+#wrapper>#cent>#centRight>#ListDate>form>.goodsLi>.imgDiv{
+    width: 80px;
+    height: 80px;
+}
+#wrapper>#cent>#centRight>#ListDate>form>.goodsLi>.imgDiv>img{
+    width: 100%;
+    height: 100%;
+}
+#wrapper>#cent>#centRight>#ListDate>form>.goodsLi>.nameDiv{
+    width: 30%;
+    height: 80px;
+    /*background-color: yellowgreen;*/
+}
+#wrapper>#cent>#centRight>#ListDate>form>.goodsLi>.nameDiv>.goodNam{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    text-indent: 1em;
+    font-weight: 700;
+    line-height: 50px;
+    overflow: hidden;
+}
+#wrapper>#cent>#centRight>#ListDate>form>.goodsLi>.nameDiv>p{
+    font-size: 13px;
+    text-indent: 1em;
+    line-height: 16px;
+}
+#wrapper>#cent>#centRight>#ListDate>form>.goodsLi>.priDiv{
+    width: 20%;
+    height: 80px;
+    color: red;
+    /*background-color: green;*/
+    font-weight: 700;
+    line-height: 80px;
+    text-align: center;
+}
+#wrapper>#cent>#centRight>#ListDate>form>.goodsLi>.statDiv{
+    width: 20%;
+    height: 80px;
+    line-height: 80px;
+    /*background-color: darkgray;*/
+    text-align: center;
+}
+#wrapper>#cent>#centRight>#ListDate>form>.goodsLi>.rem{
+    width: 20%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    /*background-color: mediumseagreen;*/
+}
+#wrapper>#cent>#centRight>#ListDate>form>.goodsLi>.rem>a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/*添加名片*/
+#wrapper>#cent>#centRight>#ListDate>.goodsLi{
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    display: flex;
+    border: 1px solid black;
+}
+#wrapper>#cent>#centRight>#ListDate>.goodsLi>.imgDiv{
+    width: 80px;
+    height: 80px;
+}
+#wrapper>#cent>#centRight>#ListDate>.goodsLi>.imgDiv>img{
+    width: 100%;
+    height: 100%;
+}
+#wrapper>#cent>#centRight>#ListDate>.goodsLi>.nameDiv{
+    width: 30%;
+    height: 80px;
+    /*background-color: yellowgreen;*/
+}
+#wrapper>#cent>#centRight>#ListDate>.goodsLi>.nameDiv>.goodNam{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    text-indent: 1em;
+    font-weight: 700;
+    line-height: 50px;
+    overflow: hidden;
+}
+#wrapper>#cent>#centRight>#ListDate>.goodsLi>.nameDiv>p{
+    font-size: 13px;
+    text-indent: 1em;
+    line-height: 16px;
+}
+#wrapper>#cent>#centRight>#ListDate>.goodsLi>.priDiv{
+    width: 20%;
+    height: 80px;
+    color: red;
+    /*background-color: green;*/
+    font-weight: 700;
+    line-height: 80px;
+    text-align: center;
+}
+#wrapper>#cent>#centRight>#ListDate>.goodsLi>.statDiv{
+    width: 20%;
+    height: 80px;
+    line-height: 80px;
+    /*background-color: darkgray;*/
+    text-align: center;
+}
+#wrapper>#cent>#centRight>#ListDate>.goodsLi>.rem{
+    width: 20%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    /*background-color: mediumseagreen;*/
+}
+#wrapper>#cent>#centRight>#ListDate>.goodsLi>.rem>a{
+    text-decoration: none;
+    color: black;
+}
+#wrapper>#cent>#centRight>#ListDate>.goodsLi>.addPri,#wrapper>#cent>#centRight>#ListDate>.goodsLi>.addImg{
+    width: 20%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+#wrapper>#cent>#centRight>#ListDate>.goodsLi>.addPri>a,#wrapper>#cent>#centRight>#ListDate>.goodsLi>.addImg>a{
+    text-decoration: none;
+    color: black;
+}
+
+/*规格列表删除修改名片*/
+#wrapper>#cent>#centRight>#ListDate>.normsLi{
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    /*display: flex;*/
+    overflow: auto;
+}
+#wrapper>#cent>#centRight>#ListDate>.normsLi>.imgDiv{
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+#wrapper>#cent>#centRight>#ListDate>.normsLi>.imgDiv>img{
+    width: 100%;
+    height: 100%;
+}
+#wrapper>#cent>#centRight>#ListDate>.normsLi>.nameDiv{
+    width: 20%;
+    height: 80px;
+    background-color: yellowgreen;
+    float: left;
+}
+#wrapper>#cent>#centRight>#ListDate>.normsLi>.nameDiv>.goodNam{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    text-indent: 1em;
+    font-weight: 700;
+    line-height: 50px;
+    overflow: hidden;
+}
+#wrapper>#cent>#centRight>#ListDate>.normsLi>.nameDiv>p{
+    font-size: 13px;
+    text-indent: 1em;
+    line-height: 16px;
+}
+#wrapper>#cent>#centRight>#ListDate>.normsLi>.norms{
+    width: 20%;
+    height: 80px;
+    float: left;
+}
+#wrapper>#cent>#centRight>#ListDate>.normsLi>.norms>.normText{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+#wrapper>#cent>#centRight>#ListDate>.normsLi>.norms>.normText>p{
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+}
+#wrapper>#cent>#centRight>#ListDate>.normsLi>.norms>.normText>a{
+    text-decoration: none;
+    color: black;
+}

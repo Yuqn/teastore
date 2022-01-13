@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper>#dhl{
+    width: 100%;
+    height: 50px;
+    background-color: mediumseagreen;
+}
+#wrapper>#dhl>#dhlBef{
+    width: 10%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    /*background-color: red;*/
+    border-right: 1px solid white;
+    float: left;
+}
+#wrapper>#dhl>#dhlBef>a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+#wrapper>#dhl>#dhlInd{
+    width: 10%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    /*background-color: red;*/
+    border-left: 1px solid white;
+    float: right;
+}
+#wrapper>#dhl>#dhlInd>a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+#wrapper>#addDiv{
+    width: 60%;
+    height: 240px;
+    margin-left: 20%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    /*background-color: yellowgreen;*/
+    border: 1px solid black;
+    position: relative;
+}
+#wrapper>#addDiv>ul{
+    width: 240px;
+    height: 240px;
+    /*border: 1px solid red;*/
+    list-style: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+#wrapper>#addDiv>ul>li{
+    width: 60%;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 10%;
+    margin-top: 15px;
+    background-color: mediumseagreen;
+    color: white;
+    text-align: center;
+}
+#wrapper>#addDiv>#myTextName,#wrapper>#addDiv>#myTextPas,#wrapper>#addDiv>#myTextMem{
+    width: 600px;
+    height: 240px;
+    /*border: 1px solid orange;*/
+    position: absolute;
+    left: 260px;
+}
+#wrapper>#addDiv>#myTextName>form{
+    width: 100%;
+    height: 100%;
+}
+#wrapper>#addDiv>#myTextName>form>div{
+    width: 100%;
+    height: 40px;
+    margin-top: 50px;
+    line-height: 40px;
+    /*border-bottom: 1px solid yellowgreen;*/
+}
+#wrapper>#addDiv>#myTextPas>form{
+    width: 100%;
+    height: 100%;
+}
+#wrapper>#addDiv>#myTextPas>form>div{
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    line-height: 40px;
+    /*border-bottom: 1px solid yellowgreen;*/
+}
+#wrapper>#addDiv>#myTextMem>form{
+    width: 100%;
+    height: 100%;
+}
+#wrapper>#addDiv>#myTextMem>form>div{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    line-height: 40px;
+    /*border-bottom: 1px solid yellowgreen;*/
+}

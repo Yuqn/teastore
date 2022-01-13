@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper>#dhl{
+    width: 100%;
+    height: 50px;
+    background-color: mediumseagreen;
+}
+#wrapper>#dhl>#dhlBef{
+    width: 10%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    /*background-color: red;*/
+    border-right: 1px solid white;
+    float: left;
+}
+#wrapper>#dhl>#dhlBef>a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+#wrapper>#dhl>#dhlInd{
+    width: 10%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    /*background-color: red;*/
+    border-left: 1px solid white;
+    float: right;
+}
+#wrapper>#dhl>#dhlInd>a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+#wrapper>#form{
+    width: 80%;
+    margin-left: 10%;
+}
+#wrapper>#form>form{
+    width: 60%;
+    height: 300px;
+    margin-left: 20%;
+    margin-top: 40px;
+    /*border: 1px solid yellowgreen;*/
+}
+#wrapper>#form>form>.addGoods{
+    width: 80%;
+    margin-left: 10%;
+    height: 40px;
+}
+#wrapper>#form>form>.addGoods>.addGoodsLi{
+    float: left;
+}
+#wrapper>#form>form>.addGoods>.addGoodsLi:first-child{
+    width: 30%;
+    height: 40px;
+}
+#wrapper>#form>form>.addGoods>.addGoodsLi:last-child{
+    width: 70%;
+    height: 40px;
+}

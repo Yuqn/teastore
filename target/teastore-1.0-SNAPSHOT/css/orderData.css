@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper>#dhl{
+    width: 100%;
+    height: 50px;
+    background-color: mediumseagreen;
+}
+#wrapper>#dhl>#dhlBef{
+    width: 10%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    /*background-color: red;*/
+    border-right: 1px solid white;
+    float: left;
+}
+#wrapper>#dhl>#dhlBef>a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+#wrapper>#dhl>#dhlInd{
+    width: 10%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    /*background-color: red;*/
+    border-left: 1px solid white;
+    float: right;
+}
+#wrapper>#dhl>#dhlInd>a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+#wrapper>#cent{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 370px;
+    /*height: 1000px;*/
+    /*background-color: yellow;*/
+}
+#wrapper>#cent>#gnUl{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+#wrapper>#cent>#gnUl>ul{
+    /*width: 100%;*/
+    height: 50px;
+    /*border: 1px solid red;*/
+    margin: 0 auto;
+    list-style: none;
+}
+#wrapper>#cent>#gnUl>ul>li{
+    float: left;
+    width: 19%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-right: 1px black solid;
+    /*margin-left: 1%;*/
+}
+#wrapper>#cent>#orderList{
+    width: 100%;
+    margin-top: 10px;
+}
+#wrapper>#cent>#orderList>.orderList{
+    width: 100%;
+    height: 100px;
+    /*background-color: mediumseagreen;*/
+    margin-bottom: 10px;
+    border-bottom: 1px solid darkgray;
+    border-top: 1px solid darkgray;
+    display: flex;
+
+}
+#wrapper>#cent>#orderList>.orderList>.orderImg{
+    width: 98px;
+    height: 98px;
+    border: 1px solid green;
+}
+#wrapper>#cent>#orderList>.orderList>.orderImg>img{
+    width: 100%;
+    height: 100%;
+}
+#wrapper>#cent>#orderList>.orderList>.orderText{
+    width: 30%;
+    height: 100px;
+    overflow: hidden;
+    /*background-color: yellow;*/
+}
+#wrapper>#cent>#orderList>.orderList>.orderPrice{
+    width: 15%;
+    height: 100px;
+    /*background-color: red;*/
+    overflow: hidden;
+    color: red;
+}
+#wrapper>#cent>#orderList>.orderList>.orderNum{
+    width: 15%;
+    height: 100px;
+    /*background-color: gray;*/
+    overflow: hidden;
+}
+#wrapper>#cent>#orderList>.orderList>.orderDeli{
+    width: 15%;
+    height: 100px;
+    /*background-color: orange;*/
+    overflow: hidden;
+}
+#wrapper>#cent>#orderList>.orderList>.orderUp{
+    width: 20%;
+    height: 100px;
+    /*background-color: greenyellow;*/
+    text-align: center;
+    line-height: 100px;
+    overflow: hidden;
+}
+#wrapper>#cent>#orderList>.orderList>.orderText>p{
+    text-indent: 1em;
+    line-height: 30px;
+    font-size: 13px;
+}
+#wrapper>#cent>#orderList>.orderList>.orderText>.goodName{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    overflow: hidden;
+}
+#wrapper>#cent>#orderList>.orderList>.orderPrice>p,#wrapper>#cent>#orderList>.orderList>.orderNum>p,#wrapper>#cent>#orderList>.orderList>.orderDeli>p{
+    text-align: center;
+    line-height: 100px;
+}
+#wrapper>#cent>#orderList>.orderList>.orderUp>a{
+    text-decoration: none;
+    color: black;
+}
